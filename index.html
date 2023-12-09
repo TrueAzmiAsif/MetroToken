@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MetroToken</title>
+    <link rel="stylesheet" href="metro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="bg-dark-subtle">
+<div>
+    <h1 class="text-bg-danger p-3">Metro</h1>
+    <h2 class="text-bg-warning p-2">Buy metro <span>tokens</span> online</h2>
+</div>
+
+<div class="content">
+    <div class="entry bg-success-subtle">
+        <form action="http://localhost:8080/Token/buy" method="post">
+            <h1>Buy Token</h1>
+            <label for="Boarding Station">From:</label>
+            <select name="Boarding Station" id="Boarding Station">
+                <option value="Sector 62">Sector 62</option>
+                <option value="Sector 59">Sector 59</option>
+                <option value="Noida Electronic city">Noida Electronic city</option>
+                <option value="Sector 61">Sector 61</option>
+                <option value="Sector 52">Sector 52</option>
+                <option value="Sector 34">Sector 34</option>
+                <option value="City Center">City Center</option>
+                <option value="Golf Course">Golf Course</option>
+                <option value="Botanical garden">Botanical garden</option>
+                <option value="Sector 18">Sector 18</option>
+                <option value="Sector 16">Sector 16</option>
+                <option value="Sector 15">Sector 15</option>
+                <option value="New Ashok Nagar">New Ashok Nagar</option>
+                <option value="Mayur Vihar 1 ">Mayur Vihar 1 </option>
+                <option value="Mayur Vihar Extension">Mayur Vihar Extension</option>
+                <option value="Akshardham">Akshardham</option>
+                <option value="Yamuna Bank">Yamuna Bank</option>
+                <option value="Indraprastha">Indraprastha</option>
+                <option value="Supreme Court">Supreme Court</option>
+                <option value="Mandi House">Mandi House</option>
+            </select><br/>
+            <br/>
+            <label for="Destination Station" class="toLeft">To:</label>
+            <select name="Destination Station" id="Destination Station">
+                <option value="Sector 62">Sector 62</option>
+                <option value="Sector 59">Sector 59</option>
+                <option value="Noida Electronic city">Noida Electronic city</option>
+                <option value="Sector 61">Sector 61</option>
+                <option value="Sector 52">Sector 52</option>
+                <option value="Sector 34">Sector 34</option>
+                <option value="City Center">City Center</option>
+                <option value="Golf Course">Golf Course</option>
+                <option value="Botanical garden">Botanical garden</option>
+                <option value="Sector 18">Sector 18</option>
+                <option value="Sector 16">Sector 16</option>
+                <option value="Sector 15">Sector 15</option>
+                <option value="New Ashok Nagar">New Ashok Nagar</option>
+                <option value="Mayur Vihar 1 ">Mayur Vihar 1 </option>
+                <option value="Mayur Vihar Extension">Mayur Vihar Extension</option>
+                <option value="Akshardham">Akshardham</option>
+                <option value="Yamuna Bank">Yamuna Bank</option>
+                <option value="Indraprastha">Indraprastha</option>
+                <option value="Supreme Court">Supreme Court</option>
+                <option value="Mandi House">Mandi House</option>
+            </select>
+            <br/>
+            <br/>
+            <button type="submit" class="btn btn-success">Buy Now</button>
+
+        </form>
+
+    </div>
+
+    <div class="entry bg-success-subtle">
+        <form action="http://localhost:8080/journey/entry" method="post">
+            <h1>Entry/On-Boarding</h1>
+            <label for="stationName">On-board from station:</label>
+            <select name="stationName" id="stationName">
+                <option value="Sector 62">Sector 62</option>
+                <option value="Sector 59">Sector 59</option>
+                <option value="Noida Electronic city">Noida Electronic city</option>
+                <option value="Sector 61">Sector 61</option>
+                <option value="Sector 52">Sector 52</option>
+                <option value="Sector 34">Sector 34</option>
+                <option value="City Center">City Center</option>
+                <option value="Golf Course">Golf Course</option>
+                <option value="Botanical garden">Botanical garden</option>
+                <option value="Sector 18">Sector 18</option>
+                <option value="Sector 16">Sector 16</option>
+                <option value="Sector 15">Sector 15</option>
+                <option value="New Ashok Nagar">New Ashok Nagar</option>
+                <option value="Mayur Vihar 1 ">Mayur Vihar 1 </option>
+                <option value="Mayur Vihar Extension">Mayur Vihar Extension</option>
+                <option value="Akshardham">Akshardham</option>
+                <option value="Yamuna Bank">Yamuna Bank</option>
+                <option value="Indraprastha">Indraprastha</option>
+                <option value="Supreme Court">Supreme Court</option>
+                <option value="Mandi House">Mandi House</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="tokenUid">Token Uid:</label>
+            <input type="text" name="tokenUid" id="tokenUid">
+            <br/>
+            <br/>
+            <button type="submit" class="btn btn-success">Enter</button>
+
+        </form>
+
+    </div>
+
+    <div class="entry bg-info-subtle">
+        <form action="http://localhost:8080/journey/exit" method="post">
+            <h1>Exit/Departure</h1>
+            <label for="stationName">Depart from station:</label>
+            <select name="stationName" id="stationName2">
+                <option value="Sector 62">Sector 62</option>
+                <option value="Sector 59">Sector 59</option>
+                <option value="Noida Electronic city">Noida Electronic city</option>
+                <option value="Sector 61">Sector 61</option>
+                <option value="Sector 52">Sector 52</option>
+                <option value="Sector 34">Sector 34</option>
+                <option value="City Center">City Center</option>
+                <option value="Golf Course">Golf Course</option>
+                <option value="Botanical garden">Botanical garden</option>
+                <option value="Sector 18">Sector 18</option>
+                <option value="Sector 16">Sector 16</option>
+                <option value="Sector 15">Sector 15</option>
+                <option value="New Ashok Nagar">New Ashok Nagar</option>
+                <option value="Mayur Vihar 1 ">Mayur Vihar 1 </option>
+                <option value="Mayur Vihar Extension">Mayur Vihar Extension</option>
+                <option value="Akshardham">Akshardham</option>
+                <option value="Yamuna Bank">Yamuna Bank</option>
+                <option value="Indraprastha">Indraprastha</option>
+                <option value="Supreme Court">Supreme Court</option>
+                <option value="Mandi House">Mandi House</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="tokenUid2">Token Uid:</label>
+            <input type="text" name="tokenUid" id="tokenUid2">
+            <br/>
+            <br/>
+            <button type="submit" class="btn btn-success">Depart</button>
+
+        </form>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
